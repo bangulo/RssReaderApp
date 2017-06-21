@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rss_notice_item_height">80dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="text_15">15sp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="text_13">13sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

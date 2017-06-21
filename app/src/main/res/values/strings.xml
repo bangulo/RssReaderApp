@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RssReader</string>
+    <string name="title_activity_detail">DetailActivity</string>
+    <string name="show_in_explorer"><![CDATA[Ver en el navegador >]]></string>
+</resources>

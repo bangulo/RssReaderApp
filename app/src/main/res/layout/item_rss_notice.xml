@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rss_notice_item_height">
+
+    <ImageView
+        android:id="@+id/ivFeedImage"
+        android:layout_width="@dimen/rss_notice_item_height"
+        android:layout_height="@dimen/rss_notice_item_height"
+        android:layout_marginLeft="@dimen/margin_10"
+        app:srcCompat="@drawable/ic_default_image"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvFeedTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_15"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginBottom="@dimen/margin_10"/>
+
+        <TextView
+            android:id="@+id/tvFeedDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_13"
+            android:ellipsize="end"
+            android:maxLines="2" />
+
+    </LinearLayout>
+
+</LinearLayout>
