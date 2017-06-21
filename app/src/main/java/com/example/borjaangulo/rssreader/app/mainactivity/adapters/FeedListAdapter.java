@@ -11,7 +11,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.borjaangulo.rssreader.R;
-import com.example.borjaangulo.rssreader.data.ImageLoader;
 import com.example.borjaangulo.rssreader.model.RssNotice;
 import com.squareup.picasso.Picasso;
 
