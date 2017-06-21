@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.borjaangulo.rssreader.R;
 import com.example.borjaangulo.rssreader.data.ImageLoader;
 import com.example.borjaangulo.rssreader.model.RssNotice;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -52,8 +53,12 @@ public class FeedListAdapter extends ArrayAdapter<RssNotice> {
             holder = (ViewHolder) convertView.getTag();
         }
 
+        //Picasso library used for the images cache in the list view
+        Picasso
+                .with(getContext())
+                .load(rssNotices.get(position).getImageUrl())
+                .into((ImageView)  holder.ivFeedImage);
 
-        new ImageLoader(holder.ivFeedImage, getContext().getApplicationContext()).execute(rssNotices.get(position).getImageUrl());
         holder.ivFeedTitle.setText(rssNotices.get(position).getTitle());
         holder.ivFeedDescription.setText(rssNotices.get(position).getDescription());
 
